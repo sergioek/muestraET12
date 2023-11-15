@@ -11,7 +11,7 @@ const ShowComments = ({ commentsShow }) => {
             id="password"
             className="border-2 border-slate-900 rounded-md h-8 w-64 px-2"
           />
-          <button className="w-auto h-8 mx-4 bg-green-500 px-2 rounded-md text-slate-50 font-thin">
+          <button className="w-64 mt-4 sm:w-auto sm:mt-0 h-8 mx-4 bg-green-500 px-2 rounded-md text-slate-50 font-thin">
             Ingresar
           </button>
         </form>

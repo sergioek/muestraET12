@@ -36,7 +36,7 @@ const Score = ({ show }) => {
       {show && (
         <div className="flex flex-row mt-4 gap-3">
           <p className=" text-lg font-bold">
-            Puntuación promedio de {commentary.length} comentarios:
+            {commentary.length} comentarios:
           </p>
           <p className=" text-lg">{scores}</p>
 
