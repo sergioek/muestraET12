@@ -5,14 +5,15 @@ import { getDocs, collection } from "firebase/firestore";
 import Review from "./Review";
 import ShowComments from "./ShowComments";
 import Swal from "sweetalert2";
+import Score from "./Score";
 
 export const Comments = () => {
   const [post, setPost] = useState([]);
   const [show, setShow] = useState(false);
 
+
   useEffect(() => {
     const assessment = collection(databaseFirestore, "assessment");
-
     getDocs(assessment)
       .then((response) => {
         setPost(
@@ -52,6 +53,7 @@ export const Comments = () => {
           Muestra Anual Institucional 2023
         </h1>
         <div className="flex flex-col items-center">
+          <Score show={show} />
           {post == 0 ? (
             <p className="my-8 text-lg font-sans text-blue-800">
               Sin comentarios
